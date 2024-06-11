@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+import { CalculationService } from './services/calculation.service.js';
+
 import { HeaderComponent } from './header/header.component.js';
 import { UserInputsComponent } from './user-inputs/user-inputs.component.js';
 import { InvestmentResultsComponent } from './investment-results/investment-results.component.js';
@@ -13,4 +16,5 @@ import { InvestmentResultsComponent } from './investment-results/investment-resu
 })
 export class AppComponent {
   title = 'investment-calculator';
+  public calculationService = inject(CalculationService);
 }

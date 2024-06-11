@@ -1,14 +1,7 @@
 import { Injectable, signal } from '@angular/core';
-import { UserInput } from '../user-inputs/user-input.model.js';
 
-type CalculatedDate = {
-  year: number;
-  interest: number;
-  valueEndOfYear: number;
-  annualInvestment: number;
-  totalInterest: number;
-  totalAmountInvested: number;
-}
+import { UserInput } from '../user-inputs/user-input.model.js';
+import { CalculatedDate } from '../investment-results/investment-results.model.js';
 
 @Injectable({
   providedIn: 'root'

@@ -1,2 +1,7 @@
 <app-header></app-header>
+
 <app-user-inputs></app-user-inputs>
+
+@if (calculationService.isResultCalculated) {
+<app-investment-results [data]="calculationService.calculatedData"></app-investment-results>
+}
